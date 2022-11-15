@@ -8,12 +8,13 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { TechsComponent } from './pages/techs/techs.component';
 
 const routes: Routes = [
-  {path: '**', title: 'Pagina não encontrada', component: Page404Component},
-  {path: '', title: 'Página inicial', component: HomeComponent},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
+  {path: 'home', title: 'Página inicial', component: HomeComponent},
   {path: 'sobre', title: 'Sobre', component: AboutComponent},
   {path: 'exp', title: 'Experiências', component: ExpComponent},
   {path: 'tecnologias', title: 'Tecnologias', component: TechsComponent},
-  {path: 'projetos', title: 'Projetos', component: ProjectsComponent}
+  {path: 'projetos', title: 'Projetos', component: ProjectsComponent},
+  {path: '**', title: 'Pagina não encontrada', component: Page404Component}
 ];
 
 @NgModule({
