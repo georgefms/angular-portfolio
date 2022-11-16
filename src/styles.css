@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  font-family:'Changa', sans-serif;
+}
+
+:root{
+  --cor-1: #1B1C25;
+  --cor-2: #1F4068;
+  --cor-3: #206A5D;
+}
+
