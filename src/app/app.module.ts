@@ -10,6 +10,7 @@ import { ExpComponent } from './pages/exp/exp.component';
 import { TechsComponent } from './pages/techs/techs.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { Page404Component } from './pages/page404/page404.component';
     ExpComponent,
     TechsComponent,
     ProjectsComponent,
-    Page404Component
+    Page404Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
